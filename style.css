@@ -1,0 +1,319 @@
+@import url('https://fonts.googleapis.com/css2?family=Georama:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --cor-cabecalho: #64558E;
+    --cor-cabecalho-menor: #8FD295FA;
+    --cor-fundo: #BE9FE1;
+    --cor-caixa-de-pesquisa: #D9D9D952;
+    --cor-botao-login: #46894CFA;
+    --cor-card: #D9D9D9;
+    --cor-botao-aceito: #8FD295FA;
+    --cor-botao-nao: #E27A7AFA;
+    --cor-texto: #484747;
+
+    --font-principal: "Georama", sans-serif;
+}
+
+.cabecalho {
+    background-color: var(--cor-cabecalho);
+    color: var(--cor-fundo);
+    display: flex;
+    flex-direction: column;
+}
+
+.cabecalho__maior {
+    display: flex;
+    flex-direction: row;
+    width: auto;
+    justify-content: space-between;
+    align-items: center;
+    height: 5em;
+    padding: 0 1.5%;
+}
+
+.cabecalho__menor {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: auto;
+    background-color: var(--cor-cabecalho-menor);
+    height: 3.375em;
+    flex-wrap: wrap;
+    gap: 1em;
+}
+
+.cabecalho__menor__links {
+    text-decoration: none;
+    color: var(--cor-fundo);
+    font-family: var(--font-principal);
+    font-weight: 700;
+    padding: 1.1em 8.6%;
+}
+
+.cabecalho__pesquisa__caixa{
+    width: 30em;
+    border-radius: 10em;
+    height: 2em;
+}
+.cabecalho__menor__links:hover {
+    background-color: var(--cor-cabecalho);
+}
+
+.cabecalho__login__icone {
+    width: 1.5em;
+}
+
+.cabecalho__logo {
+    width: 10em;
+}
+
+.cabecalho__titulo {
+    font-size: 2.5em;
+    font-family: var(--font-principal);
+    font-weight: 700;
+    text-decoration: none;
+    color: var(--cor-fundo);
+}
+
+.cabecalho__subtitulo {
+    font-size: 1em;
+    font-family: var(--font-principal);
+    font-weight: 700;
+}
+
+.cabecalho__login {
+    display: flex;
+    gap: 1em;
+    align-items: center;
+    font-weight: 500;
+}
+
+.cabecalho__login__caixa {
+    width: 11.25em;
+    height: 2em;
+    background-color: var(--cor-caixa-de-pesquisa);
+}
+
+.pesquisa {
+    display: flex;
+    gap: 1em;
+}
+
+.cabrrcalho__pesquisa__lupa {
+    width: 1.5em;
+}
+
+.cabecalho__login__link {
+    text-decoration: none;
+    color: var(--cor-fundo);
+    font-family: var(--font-principal);
+    font-weight: 700;
+    background-color: var(--cor-botao-login);
+    border-radius: 0.5em;
+    padding: 0.375em 1em;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    font-family: var(--font-principal);
+    background-color: var(--cor-fundo);
+    text-align: justify;
+}
+
+.corpo-doa {
+    background-color: white;
+}
+
+.corpo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10em;
+    margin: 4em;
+    
+}
+
+.corpo-doa-main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 5em 5em;
+}
+
+.corpo__textos {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+}
+
+.corpo__textos__titulo {
+    font-size: 4em;
+    color: white;
+}
+
+.corpo__textos__botoes {
+    text-decoration: none;
+    padding: 1em 2em;
+    background-color: white;
+    border-radius: 10em;
+    width: 40%;
+    justify-content: center;
+}
+
+.corpo__textos__botoes:hover {
+    background-color: #64558E;
+    color: white;
+}
+
+.imagem-principal {
+    width: 40vw;
+    height: 60vh;
+    border-radius: 10em;
+}
+
+.container-principal {
+    width: 75vw;
+    height: 70vh;
+    background-color: #BE9FE1;
+    border-radius: 1em;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card {
+    width: 10em;
+    padding: 1em;
+    margin: 1em;
+    border-radius: 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+    background-color: white;
+}
+
+.card__texto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5em;
+}
+
+.card__imagem {
+    width: 50%;
+}
+
+
+.card__botoes__botao {
+    text-decoration: none;
+    color: white;
+    background-color: #64558E;
+    padding: 0.4em 0.4em;
+    border-radius: 5em;
+    font-size: small;
+}
+
+.card__botoes__botao:hover{
+    background-color: lightblue;
+    color: #64558E;
+}
+
+.voltar {
+    width: 2em;
+    margin: 0 45%;
+}
+/*
+
+.corpo {
+    align-items: center;
+    width: 63.31em;
+    margin: 5% 15%;
+    background-color: var(--cor-caixa-de-pesquisa);
+    border-radius: 1em;
+    padding: 3em;
+}
+
+.corpo__titulo {
+    font-size: 1.5em;
+    font-family: var(--font-principal);
+    font-weight: 700;
+    color: var(--cor-botao-login);
+}
+
+.corpo__paragrafo {
+    text-align: justify;
+    font-family: var(--font-principal);
+    font-weight: 500;
+}
+
+.corpo__imagem {
+    width: 10em;
+    margin: 2em 20em;
+}
+
+.corpo__container {
+    display: flex;
+    height: 15em;
+    margin: 1em 1em;
+    padding: 1em 1em;
+    background-color: var(--cor-card);
+    border-radius: 1em;
+    justify-content: space-around;
+    font-family: var(--font-principal);
+    color: var(--cor-texto);
+}
+
+.corpo__container__titulos {
+    width: 60%;
+}
+
+.corpo__container__titulos__botoes {
+    width: auto;
+    display: flex;
+    justify-content: space-around;
+}
+
+.corpo__container__imagem {
+    border-radius: 10em;
+}
+
+.corpo__container__titulos__linksaceito {
+    text-decoration: none;
+    padding: 0.2em 0.4em;
+    background-color: var(--cor-botao-aceito);
+    border-radius: 2em;
+    color: var(--cor-texto);
+    font-family: var(--font-principal);
+    font-weight: 700;
+}
+
+.corpo__container__titulos__linksnao {
+    text-decoration: none;
+    padding: 0.2em 0.4em;
+    background-color: var(--cor-botao-nao);
+    border-radius: 2em;
+    color: var(--cor-texto);
+    font-family: var(--font-principal);
+    font-weight: 700;
+}
+
+.rodape {
+    height: 2em;
+    display: flex;
+    background-color: var(--cor-cabecalho-menor);
+    align-items: center;
+    justify-content: center;
+    color: var(--cor-fundo);
+    font-family: var(--font-principal);
+    font-weight: 700;
+}
