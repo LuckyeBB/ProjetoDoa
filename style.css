@@ -140,6 +140,10 @@ body {
     
 }
 
+.background-forms{
+    background-color: white;
+}
+
 .corpo-doa-main {
     display: flex;
     align-items: center;
@@ -232,6 +236,34 @@ body {
     width: 2em;
     margin: 0 45%;
 }
+
+.corpo__textos-forms{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    font-family: var(--font-principal);
+}
+
+.botao-cadastro {
+    text-decoration: none;
+    padding: 1em 2em;
+    background-color: orange;
+    border-radius: 2em;
+    color: white;
+    text-align: center;
+    font-weight: 500;
+}
+
+.forms-caixa {
+    height: 2em;
+    width: 40em;
+    background-color: lightgray;
+}
+
+.titulo-forms {
+    text-align: center;
+}
+
 /*
 
 .corpo {
